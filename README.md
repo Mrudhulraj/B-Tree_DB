@@ -1,7 +1,3 @@
-# funcdb
-
-`IT 203 Project : Nov 2020 : NITK`
-
 Building a simple database using B+trees.
 
 ## How to build?
@@ -91,42 +87,9 @@ The path of the file to store data has to be specified as argument when running 
 - #### `remove <key>`  
   If the key exists, it and it's corresponding values are removed from the table.
 
-  ```
-  [db]: remove 191665
-
-  [db]: select
-  RegNo	: 191639
-  Name	: Tharun.K
-
-  RegNo	: 191750
-  Name	: K.Prajwal
-  ```
-
-- #### `rollback`  
-  Discard changes made after the last commit.
-
-  ```
-  [db]: rollback
-
-  [db]: select
-  RegNo	: 191639
-  Name	: Tharun.K
-
-  RegNo	: 191665
-  Name	: Navaneeth.P
-
-  RegNo	: 191750
-  Name	: K.Prajwal
-  ```
-
 - #### `.exit`  
   Quit the program discarding any unsaved changes.
 
   ```
   [db]: .exit
   ```
-
-## Authors
-  - K.Prajwal
-  - Navaneeth.P
-  - Tharun.K
