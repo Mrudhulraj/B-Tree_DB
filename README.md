@@ -35,61 +35,20 @@ The path of the file to store data has to be specified as argument when running 
 - #### `insert <key> <value> ...`  
   If the key doesn't already exist, the values are inserted into the table with the given key.
 
-  ```
-  [db]: insert 191639 Tharun.K
-
-  [db]: insert 191750 K.Prajwal
-
-  [db]: insert 191665 SomeITGuy
-  ```
 - #### `select [key]`  
   If key is specified and the key exists, the corresponding values are printed. If key is not specified then all the keys and values in the table are printed.
 
-  ```
-  [db]: select
-  RegNo	: 191639
-  Name	: Tharun.K
-
-  RegNo	: 191665
-  Name	: SomeITGuy
-
-  RegNo	: 191750
-  Name	: K.Prajwal
-
-  [db]: select 191665
-  RegNo	: 191665
-  Name	: SomeITGuy
-  ```
 
 - #### `replace <key> <value> ...`  
   If the key exists, the values of the corresponding key will be replaced with the new ones.
-
-  ```
-  [db]: replace 191665 Navaneeth.P
-
-  [db]: select
-  RegNo	: 191639
-  Name	: Tharun.K
-
-  RegNo	: 191665
-  Name	: Navaneeth.P
-
-  RegNo	: 191750
-  Name	: K.Prajwal
-  ```
 
 - #### `commit`  
   Save changes to file.
   ```
   [db]: commit
-  ```
 
 - #### `remove <key>`  
   If the key exists, it and it's corresponding values are removed from the table.
 
 - #### `.exit`  
   Quit the program discarding any unsaved changes.
-
-  ```
-  [db]: .exit
-  ```
